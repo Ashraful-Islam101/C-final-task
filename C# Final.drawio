@@ -1,0 +1,15 @@
+<mxfile host="app.diagrams.net" modified="2024-05-26T20:07:20.665Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="kpbBVl-4sX2QJGnt4a2a" version="24.4.8" type="device">
+  <diagram name="Page-1" id="X7LVxQ5rGPsgmhYHTyvC">
+    <mxGraphModel dx="819" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="&lt;pre&gt;,-----------------------------------.            ,---------------------------.          &#xa;|Application                        |            |Window                     |          &#xa;|-----------------------------------|            |---------------------------|          &#xa;|+void OnStartup(StartupEventArgs e)|            |+void InitializeComponent()|          &#xa;`-----------------------------------&#39;            `---------------------------&#39;          &#xa;                  |                                             |                       &#xa;                  |                                             |                       &#xa;                  |                    ,-----------------------------------------------.&#xa;,-----------------------------------.  |MainWindow                                     |&#xa;|App                                |  |-----------------------------------------------|&#xa;|-----------------------------------|  |+void InitializeComponent()                    |&#xa;|+void OnStartup(StartupEventArgs e)|  |+void OnLoad(object sender, RoutedEventArgs e) |&#xa;`-----------------------------------&#39;  |+void OnClick(object sender, RoutedEventArgs e)|&#xa;                                       `-----------------------------------------------&#39;&#xa;&lt;/pre&gt;" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\n\nnamespace ASH_Decrypt {\n    class Application {\n      +void OnStartup(StartupEventArgs e)\n    }\n\n    class Window {\n      +void InitializeComponent()\n    }\n\n    class App {\n      +void OnStartup(StartupEventArgs e)\n    }\n\n    class MainWindow {\n      +void InitializeComponent()\n      +void OnLoad(object sender, RoutedEventArgs e)\n      +void OnClick(object sender, RoutedEventArgs e)\n    }\n\n    Application &lt;|-- App : inherits\n    Window &lt;|-- MainWindow : inherits\n}\n\n@enduml\n&quot;,&#xa;  &quot;format&quot;: &quot;txt&quot;&#xa;}" id="rBV_EMOc5x7fDu63lO1d-1">
+          <mxCell style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="100" y="300" width="600" height="240" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
